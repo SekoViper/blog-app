@@ -53,7 +53,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Blog app <a name="about-project"></a>
 
-This is a project built with Ruby on rails.
+This is a blog app which allows users to read peoples posts and comments and allows people who sign up to add their posts and comment and also like others posts, it built using Ruby on Rails along with PostgreSQL
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -113,6 +113,9 @@ Clone this repository to your desired folder:
 
   - git clone https://github.com/SekoViper/blog-app.git
   - cd blog-app
+  - bundle install
+  - rails db:create
+  - rails db:migrate
 
 ### Usage
 
@@ -132,7 +135,7 @@ To run tests, run the following command accordingly:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 
 👤 **Author1**
@@ -165,15 +168,13 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
-If you like this project...
+If you like this project then don't forget to give a star star on this repository 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
