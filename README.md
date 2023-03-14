@@ -173,6 +173,8 @@ If you like this project then don't forget to give a star star on this repositor
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
+## 🤝 Acknowledgement <a name="Acknowledgement"></a>
+I would like to thank microverse for their resources. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
