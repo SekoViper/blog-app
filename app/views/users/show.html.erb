@@ -1,1 +1,9 @@
 <h2>User shows</h2>
+
+<% if !@users.kind_of? String %>
+    <h4><%= @users.name %></h4>
+    <p><%= @users.bio %></p>
+    <p><%= @users.id %></p>
+<% else %>
+    <p><%= @users %>
+<% end %>
