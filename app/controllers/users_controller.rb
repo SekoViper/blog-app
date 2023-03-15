@@ -4,6 +4,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @users = User.find_by(id: params[:id]) || 'There is no user'
+    @user = User.includes(:posts).find_by(id: params[:id]) || 'There is no user'
   end
 end
