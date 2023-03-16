@@ -108,3 +108,14 @@ body {
   border-radius: 50%;
   width: 50px;
 }
+
+#user-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid grey;
+  padding: 10px;
+}
