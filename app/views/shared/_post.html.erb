@@ -1,5 +1,4 @@
-
-<a href="#" id="post_link" class="box">
+<a href="<%= post_path(post) %>" id="post_link" class="box">
   <h4>Post #<%= index %></h4>
   <p><%= post.text.first(150) %></p>
   <p id="comments-likes">Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
