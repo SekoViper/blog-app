@@ -9,7 +9,7 @@
         </div>
         <div>
             <% @post.comments.each do |comment| %>
-                <%= render partial: "comment", locals: { comment: comment } %>
+                <%= render partial: "shared/comment", locals: { comment: comment } %>
             <% end %>
         </div>
     </div>
