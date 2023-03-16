@@ -1,9 +1,16 @@
-<h2>User shows</h2>
-
-<% if !@users.kind_of? String %>
-    <h4><%= @users.name %></h4>
-    <p><%= @users.bio %></p>
-    <p><%= @users.id %></p>
+<% if !@user.kind_of? String %>
+    <div id="user-details">
+        <img id="user-img" src= <%= @user.photo %> alt="user_image"/>
+        <h4><%= @user.name %></h4>
+        <p id="post-count">Number of posts: <%= @user.posts_counter %></p>
+    </div>
+    <div class="box">
+        <p>Bio</p> <br>
+        <%= @user.bio %>
+    </div>
+    <% @user.posts.each_with_index do |post, index| %>
+    <%= render partial: 'shared/post', locals: { post: post, index: index + 1 } %>
+  <% end %>
 <% else %>
-    <p><%= @users %>
+    <p><%= @user %>
 <% end %>

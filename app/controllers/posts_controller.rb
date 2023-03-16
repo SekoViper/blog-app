@@ -1,10 +1,16 @@
 class PostsController < ApplicationController
   def index
-    @posts = User.find_by(id: params[:user_id])&.posts || []
+    @user = User.find_by(id: params[:user_id])
+    @posts = if @user.present?
+               @user.posts.page params[:page]
+             else
+               []
+             end
   end
 
   def show
-    puts Post.where(author_id: params[:user_id], id: params[:id])
-    @post = Post.find_by(author_id: params[:user_id], id: params[:id]) || 'There are no posts'
+    @post = Post.includes(:comments).find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    @post = 'There are no posts'
   end
 end
