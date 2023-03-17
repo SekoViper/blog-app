@@ -11,6 +11,12 @@
     <% @user.posts.each_with_index do |post, index| %>
     <%= render partial: 'shared/post', locals: { post: post, index: index + 1 } %>
   <% end %>
+  <div class="buttons_holder">
+        <button id="create_post"><%= link_to 'Create post', new_user_post_path(user_id: @user.id) %></button>
+        <% if !@user.posts.empty? %>
+            <button id="show_all_posts"><%= link_to 'Show all posts', user_posts_path(user_id: @user.id) %></button>
+        <% end %>
+    </div> 
 <% else %>
     <p><%= @user %>
 <% end %>
