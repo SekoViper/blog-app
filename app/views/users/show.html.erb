@@ -1,9 +1,5 @@
 <% if !@user.kind_of? String %>
-    <div id="user-details">
-        <img id="user-img" src= <%= @user.photo %> alt="user_image"/>
-        <h4><%= @user.name %></h4>
-        <p id="post-count">Number of posts: <%= @user.posts_counter %></p>
-    </div>
+        <%= render partial: 'shared/user', locals: { user: @user } %>
     <div class="box">
         <p>Bio</p> <br>
         <%= @user.bio %>
