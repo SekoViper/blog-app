@@ -14,6 +14,7 @@ class UsersController < ApplicationController
       redirect_to users_path
     else
       flash.now[:error] = "Error: couldn't save user"
+      render :new
     end
   end
 
