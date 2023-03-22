@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Users', type: :system do
-  describe 'displays all users' do
+RSpec.describe '', type: :system do
     it 'displays all users' do
       # display a page
       visit users_path
@@ -17,9 +16,7 @@ RSpec.describe 'Users', type: :system do
       sleep(1)
       assert_text 'Bio'
     end
-  end
 
-  describe 'shows detail page for a user' do
     it 'displays the user with their posts' do
       # display a all users
       visit users_path
@@ -63,5 +60,4 @@ RSpec.describe 'Users', type: :system do
       # assert the displayed page
       sleep(1)
     end
-  end
 end
