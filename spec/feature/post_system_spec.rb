@@ -33,7 +33,7 @@ RSpec.describe 'Posts', type: :system do
 
       # select a post
       sleep(1)
-      click_on('This is my first post...')
+      first(:link_or_button, 'This is another post').click
 
       # add a comment
       sleep(1)
@@ -63,7 +63,7 @@ RSpec.describe 'Posts', type: :system do
       click_button 'Show all posts'
 
       sleep(1)
-      find(:link, 'This is my first post...', match: :first).click
+      find(:link, 'This is another post', match: :first).click
 
       # assert the displayed page
       assert_text 'Katie'
@@ -77,7 +77,6 @@ RSpec.describe 'Posts', type: :system do
 
       # assert the displayed page
       click_on('Add comment')
-      # assert_text 'Comment saved successfully'
     end
   end
 end
