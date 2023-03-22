@@ -18,7 +18,7 @@ RSpec.describe '', type: :system do
   end
 
   it 'displays the user with their posts' do
-    # display a all users
+    # display all users
     visit users_path
 
     # assert the displayed page
@@ -35,7 +35,8 @@ RSpec.describe '', type: :system do
 
     # click on a post from the list of posts
     sleep(1)
-    page.click_on 'first'
+    # page.click_on 'first'
+    first(:link_or_button, 'This is another post').click
 
     # assert the displayed page
     sleep(1)
@@ -56,8 +57,5 @@ RSpec.describe '', type: :system do
     # navigate to posts path
     sleep(1)
     click_button 'Show all posts'
-
-    # assert the displayed page
-    sleep(1)
   end
 end
