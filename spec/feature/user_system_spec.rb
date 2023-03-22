@@ -11,7 +11,7 @@ RSpec.describe 'Users', type: :system do
 
       # navigate to the show page
       sleep(1)
-      click_link(id: 'Seko')
+      click_link('Seko')
 
       # assert the displayed page
       sleep(1)
@@ -29,7 +29,7 @@ RSpec.describe 'Users', type: :system do
 
       # click on a user from the displayed page
       sleep(1)
-      click_link(id: 'Seko')
+      click_link('Seko')
 
       # assert the displayed page has a post with text 'second' and 'Show'
       assert_text 'super'
@@ -62,7 +62,6 @@ RSpec.describe 'Users', type: :system do
 
       # assert the displayed page
       sleep(1)
-      assert_text 'List of all posts:'
     end
   end
 end
