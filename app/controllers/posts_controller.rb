@@ -23,7 +23,7 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
     if @post.save
       flash[:success] = 'Post saved successfully'
-      redirect_to users_path
+      redirect_to user_posts_path
     else
       render :new, alert: 'Error occured!'
     end
