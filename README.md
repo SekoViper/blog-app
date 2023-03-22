@@ -135,13 +135,18 @@ To run tests, run the following command accordingly:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="author"></a>
 
 
 👤 **Author1**
 
 - GitHub: [@SekoViper](https://github.com/SekoViper)
 - LinkedIn: [Livingstone dameh](https://www.linkedin.com/in/livingstone-dameh/)
+
+👤 **Author2**
+
+- GitHub: [@187jjay187](https://github.com/187jjay187)
+- LinkedIn: [Jerome-Osman](https://www.linkedin.com/in/jerome-osman/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
