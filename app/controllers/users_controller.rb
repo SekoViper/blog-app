@@ -4,7 +4,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.includes(:posts).find_by(id: params[:id]) || 'There is no user'
+    @user = User.includes(:posts, :comments).find_by(id: params[:id]) || 'There is no user'
+    @posts = @user.posts.limit(3).page(params[:page])
   end
 
   def create

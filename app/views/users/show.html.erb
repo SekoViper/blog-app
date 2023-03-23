@@ -16,3 +16,5 @@
 <% else %>
     <p><%= @user %>
 <% end %>
+
+<%= paginate @posts, per_page: 3 %>
