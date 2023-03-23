@@ -11,6 +11,7 @@
   </head>
 
   <body>  
+  <%= button_to "Logout", destroy_user_session_path, method: :delete, id: "destroy-session" %>
   <%= yield %>
    <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %>">
