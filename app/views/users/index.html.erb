@@ -1,7 +1,6 @@
 <% if @users.empty? %>
     <p><%= "There are no users to display" %></p>
 <% else %>
-     <button id="create_user"><%= link_to "Create new user", new_user_path %></button>
     <h3>List of all users</h3>
     <% @users.each do |user| %>
         <a href= <%= user_path(id: user.id) %> class="single_user">
